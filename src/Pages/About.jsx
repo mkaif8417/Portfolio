@@ -15,7 +15,7 @@ const About = () => {
           <p>
             I’m <strong>Md Kaif</strong>, a passionate Full-Stack Developer with experience in building responsive web applications using modern tools like React.js, HTML, CSS, and JavaScript.
             My goal is to create smooth and engaging user experiences through clean, accessible, and efficient code.
-            I completed my <strong>B.Sc in Computer Science</strong> in 2024 and am currently learning full stack development at <strong>TEKS Academy</strong>.
+            I completed my <strong>B.Sc in Computer Science</strong> in 2024 and am currently learning full stack development at <strong>TEKS Academy(Hitech city) Hyderabad</strong>.
             I’m continuously working on projects to improve my skills and contribute meaningfully to the tech industry.
           </p>
         </div>
