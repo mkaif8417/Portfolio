@@ -1,0 +1,149 @@
+.home {
+  background-color: #f7f5f2;
+  padding: 40px 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2e2e2e;
+  height: 80vh;
+} 
+ .home-inner {
+  max-width: 900px;
+  margin: 0 auto;
+} 
+
+.name{
+    font-size: 2.5rem;
+    color: #6f4e37;
+    margin-bottom: 18px;
+    margin-left:3% ;
+   font-family: 'Batang','serif';
+}
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #5a4636;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+
+.home-name {
+  font-size: 2rem;
+  color: #7d6651;
+  ;
+  margin-bottom: 15px;
+}
+
+.home-text {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #444;
+  max-width: 700px;
+  margin-left:3%;
+} 
+/* .linkedin-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 20px;
+  background-color: inherit;
+  color: #334155;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid #334155;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(51, 65, 85, 0.2);
+
+} */
+
+.linkedin-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 10px;
+  background-color: inherit;
+  color: #334155;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid #334155;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(51, 65, 85, 0.2); 
+  transition: all 0.3s ease;
+}
+
+/*hover effect */
+.linkedin-btn:hover {
+  box-shadow: 0 8px 16px rgba(51, 65, 85, 0.4); 
+}
+
+
+.projects-btn{
+    display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 5px;
+  background-color: inherit;
+  color: #334155;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid #334155;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(51, 65, 85, 0.2); 
+  transition: all 0.3s ease
+}
+.projects-btn:hover {
+box-shadow: 0 8px 16px rgba(51, 65, 85, 0.4); 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .home{
+    height: 40vh;
+    padding: 15%;
+  }
+  .name{
+    font-size: 1.5rem;
+  }
+
+  .home-name {
+    font-size: 1rem;
+  }
+
+  .home-text {
+    font-size: 10px;
+  }
+}
+/* .small-btn{
+  width: 35%;
+  height: 20%;
+  padding: 10px 10px;
+} */
+
+/* tab view */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .section-title {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .home {
+    height: 60vh;
+    padding: 10%;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .home-name {
+    font-size: 1.3rem;
+  }
+
+  .home-text {
+    font-size: 0.95rem;
+  }
+}

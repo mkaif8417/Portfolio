@@ -1,0 +1,135 @@
+/* Section styling */
+.project-section {
+  padding: 3rem 1rem;
+  background-color: #f9fafb;
+}
+
+/* Title styling */
+.project-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #1f2937;
+  text-decoration: underline;
+}
+
+/* Responsive grid layout */
+.project-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .project-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Project card styling */
+.project-box {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.project-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.project-box p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.project-description {
+  margin-top: 0.5rem;
+}
+
+/* Button base style */
+.common-btn {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* GitHub Button - dark outline */
+.github-button {
+  background-color: transparent;
+  color: #111827;
+  border: 1.5px solid #111827;
+}
+
+.github-button:hover {
+  background-color: #111827;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Preview Button - teal theme */
+.preview-btn {
+  background-color: transparent;
+  color: #14b8a6;
+  border: 1.5px solid #14b8a6;
+}
+
+.preview-btn:hover {
+  background-color: #14b8a6;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Responsive Buttons */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .common-btn {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .common-btn {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
