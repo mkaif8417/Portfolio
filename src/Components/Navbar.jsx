@@ -67,7 +67,7 @@ const Navbar = () => {
          
           <li>
             <a
-              href="/resume.pdf"
+              href="/Portfolio/resume.pdf"
               target="_blank"
               rel="noreferrer"
               onClick={closeMenu}
