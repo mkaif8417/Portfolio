@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 const Contact = () => {
@@ -10,6 +11,7 @@ const Contact = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -17,8 +19,34 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can add your form submission logic (API call, email etc)
-    setSubmitted(true);
+
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+      title: "New Contact Form Submission",
+      time: new Date().toLocaleString(),
+    };
+
+    emailjs
+      .send(
+        "service_gmail123",     
+        "template_cpu1uka",        
+        templateParams,
+        "uWulyyX6hPQ-s4YPN"        
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setSubmitted(true);
+          setError(null);
+        },
+        (err) => {
+          console.error("FAILED...", err);
+          setError("Oops! Something went wrong. Please try again later.");
+        }
+      );
   };
 
   return (
@@ -79,11 +107,28 @@ const Contact = () => {
             <button type="submit" className="submit-btn">
               Submit
             </button>
+
+            {error && <p className="error-message">{error}</p>}
           </form>
         ) : (
           <div className="thank-you-message">
-            <h3>Thank you for reaching out!</h3>
-            <p>I will get back to you as soon as possible.</p>
+            <h3>🎉 Thank you, {formData.name}!</h3>
+            <p>Your message has been sent successfully.</p>
+            <p>I will get back to you at <strong>{formData.email}</strong> as soon as possible.</p>
+            <button
+              className="back-btn"
+              onClick={() => {
+                setSubmitted(false);
+                setFormData({
+                  name: "",
+                  email: "",
+                  phone: "",
+                  message: "",
+                });
+              }}
+            >
+              Send Another Message
+            </button>
           </div>
         )}
       </div>

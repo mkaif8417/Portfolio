@@ -2,17 +2,16 @@
   "name": "my-portfolio",
   "private": true,
   "homepage": "https://mkaif8417.github.io/Portfolio",
-
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
-,
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "aos": "^2.3.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
