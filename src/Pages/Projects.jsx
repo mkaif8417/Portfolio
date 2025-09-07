@@ -11,7 +11,7 @@ const projects = [
   },
   {
   name: 'Trenzy E-commerce',
-  tech: 'MERN',git add <div className=""></div>
+  tech: 'MERN',
   description: 'An e-commerce practice project built with the MERN stack — frontend completed and live, backend under development. Implements product listings, cart, and checkout flows for learning full-stack concepts.',
   github: 'https://github.com/mkaif8417/trenzy.git',
   preview: 'https://mkaif8417.github.io/trenzy/'
