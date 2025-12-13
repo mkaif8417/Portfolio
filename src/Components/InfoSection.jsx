@@ -4,9 +4,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Images
-import iitLogo from "../assets/logo imgs/iitimg.jpg";
-import webDevCert from "../assets/logo imgs/iit-certificate.jpg";
-import designCert from "../assets/logo imgs/graphic design certificate.jpg";
+import iitLogo from "../assets/logo-imgs/iitimg.jpg";
+import webDevCert from "../assets/logo-imgs/iit-certificate.jpg";
+import designCert from "../assets/logo-imgs/graphic design certificate.jpg";
 
 const InfoSection = () => {
   const [modalImg, setModalImg] = useState(null);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../assets/logo imgs/kaif-logo.png";
+import logo from "../assets/logo-imgs/kaif-logo.png";
 import { NavLink } from "react-router-dom";
 import Home from "../Pages/Home";
 

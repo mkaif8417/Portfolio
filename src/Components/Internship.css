@@ -1,0 +1,70 @@
+.internship-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.internship-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.internship-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.internship-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.internship-card p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+.internship-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  color: #444;
+}
+
+.project-images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.project-images img {
+  width: 250px; /* adjust as needed */
+  height: 150px; /* keeps rectangle shape, change if you want square */
+  object-fit: cover; /* ensures images cover the box nicely */
+  border-radius: 8px; /* rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.05); /* subtle hover effect */
+}
+
+.internship-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.internship-card a:hover {
+  text-decoration: underline;
+}

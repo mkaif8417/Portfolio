@@ -6,8 +6,15 @@ const projects = [
     name: 'Portfolio Website',
     tech: ' HTML, CSS, React+Vite',
     description: 'A personal portfolio showcasing my skills, experience, and projects, built with React and Vite.',
-    github: 'https://github.com/mkaif8417/Portfolio',
+    github: 'https://github.com/mkaif8417/QUICKSHOW',
     preview: 'https://mkaif8417.github.io/Portfolio/'
+  },
+  {
+    name: 'QUICKSHOW',
+    tech: ' HTML,CSS ,JS ,REACT',
+    description: 'QUICKSHOW is a movie ticket booking website that allows users to browse movies, select seats, and book tickets through a simple and intuitive interface. It focuses on responsive design and smooth user experience.',
+    github: 'https://github.com/mkaif8417/QUICKSHOW',
+    preview: 'https://mkaif8417.github.io/QUICKSHOW/'
   },
   {
   name: 'Trenzy E-commerce',

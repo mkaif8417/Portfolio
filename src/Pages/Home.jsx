@@ -1,10 +1,9 @@
-
-
 import InfoSection from '../Components/Infosection';
 import About from './About';
 import Contact from './Contact';
 import './Home.css';
 import Projects from './Projects';
+import Internship from "../Components/Internship";
 
 
 const Home = () => {
@@ -39,6 +38,7 @@ const Home = () => {
         </div>
       </section>
       <About />
+      <Internship/>
     <Projects/>
     <InfoSection/>
     <Contact/>
