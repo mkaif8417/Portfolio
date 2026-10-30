@@ -12,7 +12,7 @@ const Home = () => {
       <section className="home" id="home">
         <div className="home-inner">
           <h3 className="home-name">Hi I'm</h3>
-          <h3 className='name'>MOHD KAIFFFFFFF</h3>
+          <h3 className='name'>Mohd Kaif</h3>
           <p className="home-text">
             I’m a Full-stack developer who loves crafting clean, scalable web applications.
             My goal is to build solutions that offer both exceptional performance and a delightful user experience.
